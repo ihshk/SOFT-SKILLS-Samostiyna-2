@@ -3,6 +3,12 @@
 using namespace std;
 
 int main() {
-    testandrii();
-    testihor();
+    char **field;
+    int w, h;
+
+    fieldcreate(field, w, h);
+
+    fieldout(field, w, h);
+
+    fielddelete(field, h);
 }
