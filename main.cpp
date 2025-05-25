@@ -1,1 +1,8 @@
-// here will be code
+#include "funcs.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+    testandrii();
+    testihor();
+}
