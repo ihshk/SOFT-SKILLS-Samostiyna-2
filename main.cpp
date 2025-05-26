@@ -1,5 +1,6 @@
 #include "funcs.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -7,12 +8,14 @@ int main() {
     int w, h;
 
     fieldcreate(field, w, h);
+    fieldout(field, w, h);
+    initConfig(field, w, h);
 
+    seekAliveCells(field, w, h);
+    fieldout(field, w, h);
+
+    seekAliveCells(field, w, h);
     fieldout(field, w, h);
 
     fielddelete(field, h);
-
-    void initConfig(char** f, int w, int h);
-
-    int countAliveSusid(char** f, int x, int y, int w, int h);
 }

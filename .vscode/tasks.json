@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}", "A:\\Programes\\SOFT-SKILLS-Samostiyna-2\\funcs.h", "andriifuncs.cpp", "ihorfuncs.cpp",
+                "${file}", "A:\\SOFT-SKILLS-Samostiyna-2\\funcs.h", "andriifuncs.cpp", "ihorfuncs.cpp",
                 "-o",
                 "${fileDirname}\\programme.exe"
             ],

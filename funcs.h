@@ -7,10 +7,9 @@ using namespace std;
 void fieldcreate(char**&, int&, int&);
 void fieldout(char**, int, int);
 void fielddelete(char**, int);
+void seekAliveCells(char**, int, int);
+
 void initConfig(char** f, int w, int h);
 int countAliveSusid(char** f, int x, int y, int w, int h);
-
-void testandrii();
-void testihor();
 
 #endif
