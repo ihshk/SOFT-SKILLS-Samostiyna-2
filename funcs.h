@@ -4,9 +4,11 @@
 #include <iostream>
 using namespace std;
 
-void fieldcreating(char**&, int&, int&);
+void fieldcreate(char**&, int&, int&);
 void fieldout(char**, int, int);
-void fielddeleting(char**, int);
+void fielddelete(char**, int);
+void initConfig(char** f, int w, int h);
+int countAliveSusid(char** f, int x, int y, int w, int h);
 
 void testandrii();
 void testihor();

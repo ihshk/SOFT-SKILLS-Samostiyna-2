@@ -11,4 +11,8 @@ int main() {
     fieldout(field, w, h);
 
     fielddelete(field, h);
+
+    void initConfig(char** f, int w, int h);
+
+    int countAliveSusid(char** f, int x, int y, int w, int h);
 }
