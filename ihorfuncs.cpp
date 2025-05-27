@@ -1,4 +1,5 @@
 #include "funcs.h"
+#include <windows.h>
 
 void initConfig(char** f, int w, int h) { //користувач задає кількість живих клітин
     int count;
@@ -42,4 +43,45 @@ int countAliveSusid(char** f, int x, int y, int w, int h) {
     }
 
     return count;
+}
+
+bool allCellsDead(char** f, int w, int h) {
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < w; j++) {
+            if (f[i][j] == 'o') {
+                return false; // знайдена хоча б одна жива клітина
+            }
+        }
+    }
+    return true; // всі клітини мертві
+}
+
+void gameLoop(char**& field, int w, int h) {
+    int generation = 0;
+
+    while (true) {
+        system("cls"); // очищення екрану
+
+        cout << "Покоління #" << generation << endl;
+        fieldout(field, w, h);
+
+        int aliveCount = 0;
+        for (int i = 0; i < h; i++) {
+            for (int j = 0; j < w; j++) {
+                if (field[i][j] == 'o') aliveCount++;
+            }
+        }
+
+        cout << "Живих клітин: " << aliveCount << endl;
+
+        if (aliveCount == 0) {
+            cout << "Усі клітини мертві. Гру завершено!" << endl;
+            break;
+        }
+
+        seekAliveCells(field, w, h);
+        generation++;
+
+        Sleep(750); // затримка перед наступним поколінням
+    }
 }

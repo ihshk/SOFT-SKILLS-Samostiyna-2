@@ -11,5 +11,7 @@ void seekAliveCells(char**, int, int);
 
 void initConfig(char** f, int w, int h);
 int countAliveSusid(char** f, int x, int y, int w, int h);
+bool allCellsDead(char** f, int w, int h);
+void gameLoop(char**& field, int w, int h);
 
 #endif
