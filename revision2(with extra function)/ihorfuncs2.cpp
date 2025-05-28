@@ -1,4 +1,4 @@
-#include "funcs2.h"
+#include "funcs.h"
 #include <windows.h>
 
 void initConfig(char** f, int w, int h) { //користувач задає кількість живих клітин

@@ -1,6 +1,6 @@
 #include "funcs2.h"
 #include <windows.h>
-#include <cctype> // для tolower()
+#include <cctype>
 
 bool askRestart() {
     char answer;

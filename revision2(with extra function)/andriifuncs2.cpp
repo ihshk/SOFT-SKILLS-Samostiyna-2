@@ -1,4 +1,4 @@
-#include "funcs2.h"
+#include "funcs.h"
 
 void fieldcreate(char**& f, int& w, int& h) {
     cout << "Введіть розмір поля в довжину: ";
