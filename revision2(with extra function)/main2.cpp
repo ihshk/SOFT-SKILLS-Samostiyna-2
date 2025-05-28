@@ -11,8 +11,8 @@ bool askRestart() {
 }
 
 int main() {
-    SetConsoleOutputCP(65001); // UTF-8 вивід у Windows
-    setlocale(LC_ALL, "RU");   // для кирилиці у старому компіляторі
+    SetConsoleOutputCP(65001); 
+    setlocale(LC_ALL, "RU");   
 
     do {
         int w, h;
